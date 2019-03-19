@@ -1,7 +1,11 @@
 .list {
+  width: 1013px;
+  min-height: 539px;
   margin-left: 13px;
+  outline: 1px solid black;
 }
+
 .list__table {
   width: 100%;
-  min-height: 539px;
+  height: 100%;
 }
