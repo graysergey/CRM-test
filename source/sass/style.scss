@@ -1,3 +1,7 @@
 @import "../../node_modules/node-normalize-scss/_normalize.scss",
+  "fonts",
   "global",
-  "fonts";
+  "./blocks/nav.scss",
+  "./blocks/administration.scss",
+  "./blocks/bar.scss",
+  "./blocks/list.scss";
