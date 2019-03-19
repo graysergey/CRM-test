@@ -1,4 +1,5 @@
 .administration__header {
+  position: relative;
   display: flex;
   align-items: center;
   width: 1062px;
@@ -8,6 +9,41 @@
   background-color: #ffffff;
 }
 
+.administration__back {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 12px;
+  width: 68px;
+  min-height: 27px;
+  padding: 6px 16px 4px 23px;
+
+  color: #3c52c9;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 700;
+
+  background: #ffffff;
+  border: solid 2px #3c52c9;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0465919);
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    content: "";
+    width: 6px;
+    height: 10px;
+    background-image: url("../img/back-arrow.svg");
+  }
+}
+
 .administration__title {
-  margin: 0;
+  margin: 0 auto;
+
+  color: #6b7dea;
+  font-style: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
