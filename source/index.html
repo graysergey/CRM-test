@@ -6,7 +6,126 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    Текст
-    <script src="./js/script.js"></script>
+
+    <section class="nav">
+      <h2 class="visually-hidden">Site navigation</h2>
+      <a href="#" class="nav__logo">CRM <span class="nav__lower-case">test</span></a>
+
+      <ul class="nav__menu">
+        <li class="nav__item nav__item--active">
+          <a href="#">Aplications</a>
+          <ul class="nav__submenu">
+            <li>Nice app 1</li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="#">Documentation</a></li>
+        <li class="nav__item"><a href="#">Settings</a></li>
+        <li class="nav__item"><a href="#">Support</a></li>
+        <li class="nav__item"><a href="#">Log out</a></li>
+      </ul>
+    </section>
+
+    <section class="administration">
+      <h1 class="visually-hidden">Amministration</h1>
+
+      <div class="administration__header">
+        <a href="#" class="administration__back">Back</a>
+        <p class="administration__title">Administration</p>
+      </div>
+
+      <section class="bar">
+        <form class="bar__form" action="https://rademade.com" method="GET">
+          <input type="bar__search" placeholder="Search for something...">
+          <p class="bar__services-enregistres">services enregistrés</p>
+          <button class="bar__btn" type="submit">Add</button>
+        </form>
+      </section>
+
+      <section class="list">
+        <table class="list__table">
+          <tr class="list__header">
+            <th>Title</th>
+            <th>Role</th>
+            <th>Service</th>
+            <th>Company</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>Super_admin</td>
+            <td>Production</td>
+            <td>Aboutgoods</td>
+            <td class="list__item-connected list__item-connected--toggle">Connected</td>
+            <td>19/02/2018</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>Super_admin</td>
+            <td>Production</td>
+            <td>Aboutgoods</td>
+            <td class="list__item-connected list__item-connected--toggle">Connected</td>
+            <td>19/02/2018</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>User</td>
+            <td>Production</td>
+            <td>Charal</td>
+            <td class="list__item-connected list__item-connected--toggle">Connected</td>
+            <td>19/02/2018</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>Admin</td>
+            <td>Sales</td>
+            <td>Nestlé</td>
+            <td class="list__item-connected list__item-connected--toggle">Connected</td>
+            <td>29/01/2018</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>Admin</td>
+            <td>R&D</td>
+            <td>Aboutgoods</td>
+            <td class="list__item-connected list__item-connected--toggle">Connected</td>
+            <td>19/02/2018</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>User</td>
+            <td>Production</td>
+            <td>IRi</td>
+            <td class="list__item-disconected list__item-disconected--toggle">Disconected</td>
+            <td>19/02/2018</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>Admin</td>
+            <td>Production</td>
+            <td>Aboutgoods</td>
+            <td class="list__item-connected list__item-connected--toggle">Connected</td>
+            <td>19/02/2018</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>User</td>
+            <td>Sales</td>
+            <td>Sogec</td>
+            <td class="list__item-disconected list__item-disconected--toggle">Disconected</td>
+            <td>19/02/2018</td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+    </section>
   </body>
 </html>
