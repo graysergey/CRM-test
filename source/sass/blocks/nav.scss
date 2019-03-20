@@ -9,17 +9,19 @@
   &__logo {
     display: flex;
     align-items: center;
+
     margin-left: 3px;
     margin-bottom: 40px;
 
     color: #ffffff;
-    line-height: 19px;
   }
 
   &__upper-case {
     align-self: flex-end;
-    margin-left: 15px;
+    margin-left: 11px;
     letter-spacing: 0.5mm;
+    font-size: 19px;
+    line-height: 24px;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.0547158);
   }
 
