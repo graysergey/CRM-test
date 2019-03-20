@@ -1,6 +1,6 @@
 .bar {
   display: flex;
-  width: 998px;
+  width: 100%;
   min-height: 44px;
   margin-bottom: 25px;
   margin-left: 19px;
@@ -67,11 +67,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  padding: 0;
-  padding-top: 5px;
   width: 108px;
   height: 34px;
+  margin-left: auto;
+  margin-right: 6%;
+  padding: 0;
+  padding-top: 5px;
 
   color: #ffffff;
   font-size: 18px;
