@@ -1,10 +1,12 @@
 .nav-submenu {
-  list-style: none;
+  max-width: 140px;
   margin: 0;
   padding: 0;
   margin-left: 34px;
+  list-style: none;
 
   &__item > a {
+    width: 100%;
     padding: 0;
     font-size: 13px;
     font-weight: 700;
