@@ -29,6 +29,10 @@
       & td {
         padding-top: 11px;
       }
+
+      & td:nth-of-type(5) {
+        padding-top: 30px;
+      }
     }
 
     & td,
@@ -63,11 +67,12 @@
       }
 
       &:nth-of-type(7) {
-        padding-right: 63px;
+        padding-right: 6%;
         text-align: end;
       }
 
       &:last-of-type {
+        position: relative;
         width: 200px;
       }
     }
@@ -87,10 +92,9 @@
 }
 
 .list__connection {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  display: inline-block;
   min-height: 59px;
+  padding-top: 21px;
 
   &--connected {
     color: #86ee82;
@@ -102,12 +106,11 @@
 }
 
 .list__status-connection {
-  display: block;
+  display: inline-block;
   width: 10px;
   height: 10px;
   margin-right: 2px;
   margin-left: 13px;
-  margin-top: -3px;
 
   background-color: inherit;
   border-radius: 50%;
@@ -123,12 +126,9 @@
 }
 
 .list__actions {
-  position: relative;
-
   &::before {
     position: absolute;
-    top: -11px;
-    left: -44px;
+    right: 52%;
 
     content: "";
     width: 25px;

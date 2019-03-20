@@ -16,10 +16,12 @@
 .administration__back {
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
   left: 12px;
-  width: 68px;
+  min-width: 68px;
+  max-width: 30%;
   min-height: 27px;
+  margin-right: 5%;
   padding: 6px 16px 4px 23px;
 
   color: #3c52c9;
@@ -28,23 +30,28 @@
   font-weight: 700;
 
   background: #ffffff;
-  border: solid 2px #3c52c9;
+  border: solid 1px #3c52c9;
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0465919);
 
   &::before {
     position: absolute;
-    top: 6px;
-    left: 10px;
+    top: 50%;
+    left: 13px;
     content: "";
     width: 6px;
     height: 10px;
+    margin: -5px;
     background-image: url("../img/back-arrow.svg");
   }
 }
 
 .administration__title {
-  margin: 0 auto;
+  width: 75%;
+  margin: 18px auto 18px auto;
+  padding-right: 11%;
+  text-align: center;
+  vertical-align: center;
 
   color: #6b7dea;
   font-size: 16px;
