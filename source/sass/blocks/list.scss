@@ -125,19 +125,19 @@
   }
 }
 
-.list__actions {
-  &::before {
-    position: absolute;
-    right: 52%;
+.list__info {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 14%;
 
-    content: "";
-    width: 25px;
-    height: 25px;
+  background-image: url("../img/three-point.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
 
-    background-image: url("../img/actions.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
+.list__edit {
+  display: inline-block;
 }
