@@ -17,6 +17,11 @@
   border-radius: 3px 3px;
   box-shadow: 0 8px 3px #eaebef;
 
+  & .list__status-title {
+    padding-right: 10px;
+    text-align: end;
+  }
+
   & tr:nth-of-type(2n+3) {
     background-color: #fafbff;
   }
@@ -26,14 +31,6 @@
 
     &:nth-of-type(2) {
       height: 70px;
-
-      & td {
-        padding-top: 11px;
-      }
-
-      & td:nth-of-type(5) {
-        padding-top: 30px;
-      }
     }
 
     & td,
@@ -57,8 +54,8 @@
         padding-left: 26px;
       }
 
-      &:nth-of-type(5) {
-        padding-right: 10px;
+      &:nth-of-type(5):not(.list__status-title) {
+        padding-right: 35px;
         text-align: end;
       }
 
@@ -93,36 +90,32 @@
 }
 
 .list__connection {
-  display: inline-block;
-  min-height: 59px;
-  padding-top: 21px;
+  position: relative;
 
-  &--connected {
-    color: #86ee82;
-  }
+  &::after {
+    position: absolute;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    content: "";
 
-  &--disconnected {
-    color: #ff5867;
-  }
-}
-
-.list__status-connection {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 2px;
-  margin-left: 13px;
-
-  background-color: inherit;
-  border-radius: 50%;
-
-  &--of {
-    margin-left: 6px;
-    background-color: #ff5867;
+    border-radius: 50%;
   }
 
   &--on {
-    background-color: #86ee82;
+    color: #86ee82;
+
+    &::after {
+      background-color: #86ee82;
+    }
+  }
+
+  &--off {
+    color: #ff5867;
+
+    &::after {
+      background-color: #ff5867;
+    }
   }
 }
 
