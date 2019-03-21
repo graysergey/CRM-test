@@ -31,6 +31,10 @@
 
     &:nth-of-type(2) {
       height: 70px;
+
+      & td {
+        padding-top: 9px;
+      }
     }
 
     & td,
