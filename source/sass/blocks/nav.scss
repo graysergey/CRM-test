@@ -1,5 +1,6 @@
 .nav {
-  min-width: 17%;
+  width: 218px;
+  min-width: 218px;
   min-height: 711px;
   padding: 17px 17px 17px 27px;
 
@@ -52,11 +53,13 @@
   margin-bottom: 10px;
 
   & a {
-    display: block;
+    display: inline-block;
     width: 100%;
-    padding: 5px 36px 5px 20px;
+    padding: 5px 20px 5px 20px;
 
     color: rgba(255, 255, 255, 0.695029);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     border-radius: 4px;
   }
 
