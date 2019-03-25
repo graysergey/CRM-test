@@ -1,0 +1,181 @@
+.table {
+  width: 95.3%;
+  min-height: 539px;
+  margin-left: 13px;
+}
+
+.table__title {
+  padding-left: 30px;
+  font-weight: 400;
+  text-align: left;
+
+  &:first-child {
+    padding-left: 50px;
+  }
+}
+
+.table__col {
+  width: 135px;
+  padding-left: 30px;
+
+  vertical-align: middle;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &:first-child {
+    padding-left: 50px;
+  }
+}
+
+.table__row {
+  height: 59px;
+
+  &--header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.038);
+  }
+
+  &:nth-of-type(2) {
+    height: 68px;
+
+    & .table__col {
+      padding-top: 12px;
+    }
+  }
+
+  &:nth-of-type(2n+3) {
+    background-color: #fafbff;
+  }
+}
+
+.table__content {
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-radius: 3px 3px;
+  box-shadow: 0 8px 3px #eaebef;
+
+  // Далее переназначает базовые стили таблицы, заданые выше (которые можем переиспользовать в других местах), на стили по макету.
+  &--users {
+    & .table__col {
+      &:last-child {
+        position: relative;
+        width: 195px;
+      }
+    }
+
+    & .table__title {
+      &--status {
+        padding-right: 15px;
+        text-align: right;
+      }
+
+      &:nth-of-type(2) {
+        padding-left: 22px;
+      }
+
+      &:nth-of-type(4) {
+        padding-left: 22px;
+      }
+
+      &:nth-of-type(5) {
+        text-align: right;
+      }
+
+      &:nth-of-type(6) {
+        padding-right: 35px;
+        text-align: right;
+      }
+
+      &:nth-of-type(7) {
+        padding-right: 64px;
+        padding-left: 5px;
+        text-align: right;
+      }
+    }
+
+    & .table__row {
+      & .table__col {
+        &:nth-of-type(2) {
+          padding-left: 22px;
+        }
+
+        &:nth-of-type(4) {
+          padding-left: 22px;
+        }
+
+        &:nth-of-type(5) {
+          padding-right: 40px;
+          padding-left: 5px;
+          text-align: right;
+        }
+
+        &:nth-of-type(6) {
+          padding-right: 35px;
+          padding-left: 5px;
+          text-align: right;
+        }
+
+        &:nth-of-type(7) {
+          padding-right: 64px;
+          padding-left: 5px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.table__connection {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    content: "";
+
+    border-radius: 50%;
+  }
+
+  &--on {
+    color: #86ee82;
+
+    &::after {
+      background-color: #86ee82;
+    }
+  }
+
+  &--off {
+    color: #ff5867;
+
+    &::after {
+      background-color: #ff5867;
+    }
+  }
+}
+
+.table__info {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 14%;
+
+  background-image: url("../img/three-point.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.table__edit {
+  display: inline-block;
+}
